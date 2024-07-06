@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:re_exam/controller/RecipeProvider.dart';
 import 'package:re_exam/view/home/HomeScreen.dart';
+import 'package:re_exam/view/splashScreen/splasScreen.dart';
 
 void main() {
   runApp(
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
     debugShowCheckedModeBanner: false,
-     home: HomeScreen(),
+     home: SplashScreen(),
     );
   }
 }

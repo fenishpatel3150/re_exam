@@ -95,7 +95,8 @@ class HomeScreen extends StatelessWidget {
                           onTap: ()
                           {
                             Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen(),))
-;                         },
+;                         recipeindex=index;
+                            },
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
@@ -130,3 +131,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+int recipeindex =0;

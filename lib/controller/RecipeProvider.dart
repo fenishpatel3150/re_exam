@@ -8,12 +8,11 @@ class RecipeProvider extends ChangeNotifier
 {
   DataModel? dataModel;
   bool loading=false;
-
+  List <DataModel>cradList = [];
   RecipeProvider()
   {
     FeatchData();
   }
-
 
   Future<void> FeatchData()
   async {
@@ -29,6 +28,13 @@ class RecipeProvider extends ChangeNotifier
     notifyListeners();
 
 
+  }
+
+
+
+  void addCard( DataModel datalist ) {
+    cradList.add(datalist);
+    notifyListeners();
   }
 
 
